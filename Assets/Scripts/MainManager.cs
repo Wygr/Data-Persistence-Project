@@ -90,6 +90,8 @@ public class MainManager : MonoBehaviour
             GameManager.Instance.highScore = m_Points;
             GameManager.Instance.highScoreName = GameManager.Instance.userName;
             GameManager.Instance.SaveHighScore();
+
+            HighScoreText.text = "Highscore " + GameManager.Instance.highScoreName + " " + GameManager.Instance.highScore;
         }
     }
 }
